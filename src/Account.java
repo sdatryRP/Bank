@@ -38,7 +38,7 @@ public enum TypeOfAccounts{
        return this.moneyOnAccount;
     }
 
-    abstract void getTypeOfAccount(TypeOfAccounts type);
+    abstract TypeOfAccounts getTypeOfAccount();
 
 
     public String getNameClient() {
@@ -75,7 +75,7 @@ public enum TypeOfAccounts{
 
     @Override
     public String toString() {
-        return "Account{" +
+        return "{" +
                 "nameClient='" + nameClient + '\'' +
                 ", numberAccount='" + numberAccount + '\'' +
                 ", stateOfAccount=" + stateOfAccount +
