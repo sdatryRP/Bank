@@ -15,9 +15,7 @@ public class CorporateAccount extends Account {
         return TypeOfAccounts.CORPORATE;
     }
 
-
-
-
+    
 
     @Override
     public String toString() {

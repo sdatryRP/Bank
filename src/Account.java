@@ -21,16 +21,17 @@ public enum TypeOfAccounts{
         this.stateOfAccount=true;
      }
 
-    void closeAccount(String nameClient, String numberAccount){
+    void closeAccount(){
         this.stateOfAccount=false;
         this.numberAccount="delated";
         this.nameClient="delated";
+        this.moneyOnAccount=0;
     }
 
 
 
     public void income(double monay){
-    this.moneyOnAccount=monay;
+    this.moneyOnAccount+=monay;
     }
 
 
